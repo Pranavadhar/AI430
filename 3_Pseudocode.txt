@@ -1,0 +1,25 @@
+function retrieve_and_generate_response(user_query):
+    processed_query = preprocess_query(user_query)
+
+    retrieved_documents = retrieve_information(processed_query)
+
+    if retrieved_documents is not empty:
+        // Combine retrieved information with user query
+        context = combine_context(retrieved_documents, user_query)
+        response = generate_response_with_llm(context)
+
+    return response
+
+function preprocess_query(query):
+    return tokenize_and_normalize(query)
+
+function retrieve_information(query):
+    return query_D_base(query)
+
+function combine_context(documents, user_query):
+    // Format and combine the retrieved documents with the user query
+    return format_combined_context(documents, user_query)
+
+function generate_response_with_llm(context):
+    // Use the LLM to generate a response based on the provided context
+    return llm_generate(context)
