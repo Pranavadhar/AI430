@@ -7,4 +7,4 @@
 A "hallucination" refers to a scenario where the model generates information that is factually incorrect, misleading, or completely fabricated, even though it might sound plausible or authoritative.
 
 Eg: Prompt: “If today is Monday, then what day will be tomorrow?”
-        Output: “APPLE”
+<br>        Output: “APPLE”
